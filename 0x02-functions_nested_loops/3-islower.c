@@ -4,6 +4,7 @@
 /**
  * _islower - Entry point
  * @c: to be input by user
+ * Return: 1 if lowercase and 0 if it is not
  */
 
 int _islower(int c)

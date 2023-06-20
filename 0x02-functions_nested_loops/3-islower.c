@@ -3,6 +3,7 @@
 
 /**
  * _islower - Entry point
+ * @c: to be input by user
  */
 
 int _islower(int c)

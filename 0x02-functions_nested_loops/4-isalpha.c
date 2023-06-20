@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.c"
+#include "main.h"
 /**
  * _isalpha - Checks for alphabetic character
  * @c: is input by user

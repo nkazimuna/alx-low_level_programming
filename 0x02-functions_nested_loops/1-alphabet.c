@@ -3,7 +3,7 @@
 /**
  * print_alphabet - print alphabets using _putchar
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char a;
 

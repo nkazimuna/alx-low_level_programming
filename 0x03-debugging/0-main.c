@@ -2,14 +2,17 @@
 #include "main.h"
 
 /**
- * main - Test if given value is positive or negative
- * Return: Always 0 (Success)
+ * main - Test if integer is positive or negative
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int a = 0;
+	int a;
+
+	a = 0;
 
 	positive_or_negative(a);
-	
+
 	return (0);
 }

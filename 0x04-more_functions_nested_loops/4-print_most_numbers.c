@@ -12,14 +12,8 @@ void print_most_numbers(void)
 
 	for (a = 0; 1 <= 9; a++)
 	{
-		if ((a == 2) || (a == 4))
-		{
-			continue;
-		}
-		else
-		{
-			_putchar(a + '0');
-		}
+		if (!(a == 2) || (a == 4))
+			_putchar(c);		}
 	}
 	_putchar('\n');
 }

@@ -9,14 +9,28 @@
 
 char *cap_string(char *arr)
 {
-	int a = 0;
+	int a, b, c;
 
-	while (arr[a])
+	char al[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
+	a = 32;
+
+	for (b = 0; arr[b] != '\0'; b++)
 	{
-		while (!(arr[a] >= 'a' && arr[a] <= 'z'))
-			if (arr[a - 1] == ' ' || arr[a - 1] == '\t' || arr[a - 1] == '\n' || arr[a - 1] == ',' || arr[a - 1] == ';' || arr[a - 1] == '.' || arr[a - 1] == '!' || arr[a - 1] == '?' || arr[a - 1] == '"' || arr[a - 1] == '(' || arr[a - 1] == ')' || arr[a - 1] == '{' || arr[a - 1] == '}' || a == 0)
-				arr[a] -= 32;
-		a++;
+		if (arr[b] >= 'b' && arr[b] <= 'z')
+		{
+			arr[b] = arr[b] - a;
+		}
+		a = 0;
+
+		for (c = 0; al[c] != '\0'; c++)
+		{
+			if (al[c] == arr[b])
+			{
+				a = 32;
+				break;
+			}
+		}
 	}
 	return (arr);
 }

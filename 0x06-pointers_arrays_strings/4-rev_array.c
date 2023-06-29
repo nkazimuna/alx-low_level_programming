@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * recerse_array - reverses content of an array
+ * reverse_array - reverses content of an array
  * @a: user input
  * @n: user input
  */
